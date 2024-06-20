@@ -19,20 +19,36 @@
     <!--This is where we put the code that will be displayed on your browser.-->
     <!--h1 for main heading and h2 for subheadings. There are 6 headings.-->
     <!--h1, h2, h3-h6, p are all block elements because they start a new line and take of the full width available on the page-->
+    <!--h1, h2, and p are all block elements because they start on a new line and take up the full width available-->
     <!--buttons aren't block elements, but instead they are inline elements becayse they don't start on a new line on the page, but instead only take up the width that they need. They don't take up a block-->
+    <!--h1 default font size is 32px-->
+    <!--by default h1 through h6 has margin-->
+    <!--theres usually only 1 h1 tag per page. Then h2 for the different sections. There is barely ever h4-h6 and rarely h3-->
+    <!--USE H1 FOR MAIN HEADING-->
+    <!--BLOCK ELEMENTS = <div>, <h1> till <h6>, <p>-->
+    <!--INLINE LEVEL = <span>, <a>, <button>-->
     <h1>Brooklynn</h1>
+    <!--h2 default size is 24px-->
+    <!--USE H2 FOR ALL SUBHEADINGS-->
     <h2>Frontend Simplified</h2>
+    <!--this is where you write your paragraph under subheading-->
+    <!-- text wrapped in <i></i> becomes italicized, but you can also do <b></b> and <i></i> through css-->
     <p>Paragraph <i>Lorem</i> ipsum dolor sit amet consectetur adipisicing elit. Saepe inventore qui nam dolorum, iure animi amet quas veritatis voluptate labore tempore praesentium excepturi molestiae officia, culpa temporibus consequatur consequuntur. Incidunt?</p>
+    <!--INLINE ELEMENT because no matter how many buttons you option + shift + down to create more buttons, they will all stack up on the same line and not take up the full width of the page individually. inline elements don't start on a new line-->
     <button>321</button>
-    <!--div is used to group elements together becayse it is a block element-->
+    <!--div is used to group elements together especially some inline elements because it is a block element and gives more control for styling the element-->
     <div>
+        <!--<b></b> is a inline element that makes any text inside of it bold-->
+        <!--if you wrap an inline element in a div will then make it a block level element and take up the width of the page because it is now wrapped in the block element div-->
+        <!--we use div togroup elements together-->
         <b>Bold</b>
     </div>
     <!--use <a> to link sites. You have to have https:// or the link won't work. To make the link go to a new tab instead of taking you away from your current page do target="_blank"-->
         <a href="https://discord.gg/frontend" target="_blank">Discord Server</a>
         <div> 
-        <!-- Vreate a link that opens up a dashboard in a new tab-->    
-        <a href="/dashboard.html" target="_blank">Dashboard</a>
+        <!-- Create a link that opens up a dashboard in a new tab-->
+         <!--this anchor will take us to another file within this project as appose to the Discord Server link taking us to a new website not within this projects files-->    
+        <a href="/test/dashboard.html" target="_blank">Dashboard</a>
         </div>
 </body>
 </html>
