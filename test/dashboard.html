@@ -6,20 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <!--this is the outline of a application: body, nav, main, footer-->
   <body>
+    <!--<nav></nav> is for your navigation. Always use Nav tags for navigation space. Every website will have this navigation space and at the bottom you'll have a footer to put all your information in the footer. All websites will have a navigation space and a footer space. -->
     <nav>
+      <!--Logo is usually on the left when you style it and the links are on the right of the nav bar-->
       Logo
       <a href="/index.html">Home</a>
-    </nav>
+    </nav><!--In between the nav and the footer is the <main></main> tag and the main tag wraps everything-->
     <main>
+      <!--section is used to separate different sections. To do list will be in a different section than the land 100K job-->
+      <!--section makes the page have more structure-->
       <section>
         <h1>To do List</h1>
-        <!--import image externally by pasting the link and it will fetch it from online-->
+        <!--import image externally by pasting the link you got from the internet and it will fetch it from online-->
         <p>Let's get this stuff done by the EOY.</p>
-        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="">
-       <!-- import image locally -->
-        <img src="../assets/dashboard/discord.png" alt="">
-        <img src="./about.jpg" alt="">
+        <!--src is where you tell the html to look for the image. alt is good for a device that doesnt show images like a kindle, instead of the image it will show your text that you wrote to describe the image.-->
+        <img
+          src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+          alt=""
+        />
+        <!-- import image locally -->
+         <!--you can put images in a folder and then name it assets and then you can put it in your project and target it locally ../assets/dashboard/discord.png which is the pathway to your image. This pathway will import the image locally-->
+         <!-- ./ means look in the same level / again makes it look in that folder.-->
+        <img src="../assets/dashboard/discord.png" alt="" />
+        <img src="./about.jpg" alt="" />
+        <!--ul represents an unordered list and li tag is used inside ordered list(<ol>)-->
+        <!--in ul the li list items don't have to be in order; however ol, the list has to be in order-->
         <ul>
           <li>Land $100k+ job</li>
           <li>Finish Frontend Simplified</li>
@@ -35,6 +48,7 @@
         </ol>
       </section>
     </main>
+    <!--this is where you put the copyright, links, terms and conditions, privacy statement, etc-->
     <footer>Copyright terms & conditions</footer>
   </body>
 </html>
