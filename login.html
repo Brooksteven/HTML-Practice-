@@ -8,13 +8,21 @@
   </head>
   <body>
     <h1>Login</h1>
+    <!-- form is like main. in every website there will be a form section like login.html or registration.html or subscription.html-->
     <form>
+      <!--put the email section in a div to have more control over it when styling-->
       <div>
+        <!--can remove "for" because you don't need it-->
+        <!--option + shit + down arrow to copy and paste the label and input tags with info in them to create other sections like password or name or date of birth-->
         <label>Email</label>
+        <!--input is a self closing tag. in the type section it can be email or password and the text in that section will have to abid by the type.-->
         <input type="email" required />
       </div>
+      <!--<hr> just creates a horizontal line to space out everything. this is best practices to create a horizontal line to separate your sections.-->
       <hr>
       <div>
+        <!--this is an inline element, meaning they start on the same line. To make these elements go on a different line wrap it in a div-->
+        <!-- using a div helps group elements together and makes it easier to style-->
         <label>Password</label>
         <input type="password" required />
       </div>
@@ -31,10 +39,16 @@
       </div>
       <hr>
       <div>
-        <label>Date</label>
+        <label>Birth Date</label>
         <input type="date" />
       </div>
       <hr>
+       <!--on Contact forms you can do a textarea similiar to email and password, it just allows text.
+    It can be written inside the forms section like this 
+    <div>
+      <label>Comment</label>
+      <textarea rows="10"></textarea>
+    </div>-->
       <button>Submit</button>
     </form>
   </body>
